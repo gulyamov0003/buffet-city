@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0806" />
+    <meta name="color-scheme" content="dark" />
+
+    <title>Buffet City | Chinese, Seafood &amp; Sushi Buffet in Chicago</title>
+    <meta
+      name="description"
+      content="Buffet City is a self-service buffet restaurant at 7010 S Pulaski Rd, Chicago, IL 60629. Chinese, seafood, sushi, Mexican and American selections. Dine-in, takeout and delivery. Call +1 773-838-1368."
+    />
+
+    <!--
+      ┌────────────────────────────────────────────────────────────────────┐
+      │  BEFORE LAUNCH: replace SITE_URL below with the real domain.       │
+      │  https://buffetcitychicago.example is a stand-in — Buffet City has │
+      │  no website on its Google listing, so no real domain is known.     │
+      │  Open Graph needs absolute URLs, which is the only reason a        │
+      │  placeholder appears here at all. Update the canonical, og:url     │
+      │  and og:image values together.                                     │
+      └────────────────────────────────────────────────────────────────────┘
+    -->
+    <link rel="canonical" href="https://buffetcitychicago.example/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant.restaurant" />
+    <meta property="og:site_name" content="Buffet City" />
+    <meta
+      property="og:title"
+      content="Buffet City | Chinese, Seafood &amp; Sushi Buffet in Chicago"
+    />
+    <meta
+      property="og:description"
+      content="A self-service buffet on South Pulaski Road, Chicago. Chinese, seafood, sushi, Mexican and American — all on one line. Dine-in, takeout and delivery."
+    />
+    <meta property="og:url" content="https://buffetcitychicago.example/" />
+    <meta property="og:image" content="https://buffetcitychicago.example/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="An assortment of sushi and buffet dishes at Buffet City in Chicago"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Buffet City | Chinese, Seafood &amp; Sushi Buffet in Chicago"
+    />
+    <meta
+      name="twitter:description"
+      content="A self-service buffet on South Pulaski Road, Chicago. Chinese, seafood, sushi, Mexican and American. Dine-in, takeout and delivery."
+    />
+    <meta name="twitter:image" content="https://buffetcitychicago.example/og-image.jpg" />
+
+    <!-- Local SEO -->
+    <meta name="geo.region" content="US-IL" />
+    <meta name="geo.placename" content="Chicago" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Fonts: preconnect then load, swap so text paints immediately -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+    />
+
+    <!-- LCP image: start fetching before the bundle parses -->
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-platter-800.webp"
+      imagesrcset="/images/hero-platter-400.webp 400w, /images/hero-platter-800.webp 800w, /images/hero-platter-1600.webp 1600w"
+      imagesizes="(min-width: 1024px) 44vw, 92vw"
+      fetchpriority="high"
+    />
+
+    <!--
+      Restaurant structured data — VERIFIED FIELDS ONLY.
+
+      Deliberately omitted:
+        • openingHoursSpecification — hours are not published. Inventing them
+          would send people to a closed door, so there are none here.
+        • hasMenu / menu — Buffet City publishes no menu online.
+        • acceptsReservations — no reservation system has been verified, so the
+          property is left out rather than asserted either way.
+        • aggregateRating — the 3.8/5 from 2,251 reviews is real and is shown
+          on the page, but Google's structured-data policy disallows a business
+          marking up its own review score ("self-serving reviews") on
+          LocalBusiness types, and doing so risks a manual action. The rating
+          is displayed to visitors; it is just not claimed in markup.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Buffet City",
+        "description": "Self-service buffet restaurant in Chicago serving Chinese, seafood, sushi, Mexican and American selections.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7010 S Pulaski Rd",
+          "addressLocality": "Chicago",
+          "addressRegion": "IL",
+          "postalCode": "60629",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-773-838-1368",
+        "priceRange": "$$",
+        "servesCuisine": ["Chinese", "Seafood", "Sushi", "Mexican", "American"],
+        "url": "https://buffetcitychicago.example/",
+        "image": "https://buffetcitychicago.example/og-image.jpg",
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Buffet%20City%2C%207010%20S%20Pulaski%20Rd%2C%20Chicago%2C%20IL%2060629"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 2rem; font-family: system-ui, sans-serif; color: #f7f1e6">
+        <h1>Buffet City</h1>
+        <p>A self-service buffet restaurant in Chicago.</p>
+        <p>7010 S Pulaski Rd, Chicago, IL 60629</p>
+        <p><a style="color: #e0b368" href="tel:+17738381368">+1 773-838-1368</a></p>
+        <p>Dine-in &middot; Takeout &middot; Delivery</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
