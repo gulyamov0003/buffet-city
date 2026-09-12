@@ -116,7 +116,9 @@ export type ImageKey = keyof typeof IMG;
 
 /** Responsive srcset across the three generated widths. */
 export const srcSet = (src: string): string =>
-  [400, 800, 1600].map((w) => `/images/${src}-${w}.webp ${w}w`).join(', ');
+  [400, 800, 1600]
+    .map((w) => `${import.meta.env.BASE_URL}images/${src}-${w}.webp ${w}w`)
+    .join(', ');
 
 export const srcFor = (src: string, w: 400 | 800 | 1600 = 800): string =>
-  `/images/${src}-${w}.webp`;
+  `${import.meta.env.BASE_URL}images/${src}-${w}.webp`;
